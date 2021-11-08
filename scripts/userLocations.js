@@ -24,6 +24,7 @@ function loadUsersLocations(users){
     for(let user of users){
         let marker = L.marker([user.location.latitude, user.location.longitude]).addTo(map);
         marker.bindPopup(`<b>${user.name}</b><br>${user.timestamp}`);
+        console.log(user)
     }
 }
 
