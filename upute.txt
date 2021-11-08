@@ -1,0 +1,10 @@
+Useri:
+
+mail: 0036496282-web2-lab1-user1@mailinator.com
+password: Password1
+
+mail: 0036496282-web2-lab1-user2@mailinator.com
+password: Password1
+
+mail: 0036496282-web2-lab1-user3@mailinator.com
+password: Password1

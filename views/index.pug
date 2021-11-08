@@ -1,0 +1,36 @@
+html 
+    head 
+        title Projekt #1
+        if user.isAuthenticated
+            link(rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+                integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+                crossorigin="")
+            script(src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+                integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+                crossorigin="")
+        
+    body
+        if user.isAuthenticated
+            h1(id='caption') Welcome #{user.name}
+        ul 
+            li: a(href='/', title='Home') Home
+            //li: a(href='/private') User locations             
+            if user.isAuthenticated
+                li: form(action="/logout", method="get")
+                    input(type="submit", value="Logout " + user.name)
+            else
+                li: a(href='/sign-up', title='Sign up') Sign up 
+
+        br 
+        p(id='status')
+        p(id='location')
+
+        div(id='map' style='height: 700px;')
+        
+
+    footer
+        if !user.isAuthenticated
+            script(src='/scripts/userLocation.js')
+        else 
+            script(src='/scripts/logUser.js')
+            script(src='/scripts/userLocations.js')
