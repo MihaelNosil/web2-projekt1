@@ -81,12 +81,11 @@ app.post("/location", (req, res) => {
 });
 
 app.get("/user_locations", requiresAuth(), (req, res) => {
-    console.log(users)
     res.status(200).send({users});
 });
 
   
-if(!process.env.PORT){//vratiti da bude obrnuto
+if(process.env.PORT){
   app.listen(process.env.PORT)
 } else {
   https.createServer({

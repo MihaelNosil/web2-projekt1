@@ -1,6 +1,6 @@
 
 
-getData('https://localhost:4041/user_locations').then(data => {
+getData('https://murmuring-eyrie-91657.herokuapp.com/user_locations').then(data => {
     loadUsersLocations(data.users)});
 
 

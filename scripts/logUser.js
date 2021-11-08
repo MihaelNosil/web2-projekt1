@@ -16,7 +16,7 @@ function locateUser() {
         location.textContent = `Current location: Latitude = ${latitude} °, Longitude = ${longitude} °`;
         
 
-        postData('https://localhost:4041/location', { latitude, longitude, username });
+        postData('https://murmuring-eyrie-91657.herokuapp.com/location', { latitude, longitude, username });
     }
     
     function error() {
