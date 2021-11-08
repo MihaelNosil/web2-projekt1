@@ -8,3 +8,11 @@ password: Password1
 
 mail: 0036496282-web2-lab1-user3@mailinator.com
 password: Password1
+
+impmlementirano:
+  prikaz brojčane vrijednosti trenutne lokacije skroz implementirana
+  prikaz lokacije na karti ne radi kako treba i ne mogu skuziti zasto
+  prijava korisnika skroz implementirana
+  evidentiranje prijave ne radi na heroku kako treba i ne mogu skuziti zasto
+  prikaz karte s zadnjih pet priava ne radi kako treba i ne mogu skuziti zasto
+  prikaz informacije o oznaci na karti ne vidim jer mi se karta ne prikazuje ispravno i ne mogu skuziti zasto
